@@ -1,8 +1,9 @@
 module "eks-jx" {
-  source          = "github.com/jenkins-x/terraform-aws-eks-jx?ref=v1.15.12"
+  source          = "github.com/xformation/xformation-terraform-aws-eks"
+  nginx_chart_version = var.nginx_chart_version
   cluster_name    = var.cluster_name
   cluster_version = var.cluster_version
-  region          = var.region 
+  region          = var.region
   vault_user      = var.vault_user
   is_jx2          = false
   jx_git_url      = var.jx_git_url
