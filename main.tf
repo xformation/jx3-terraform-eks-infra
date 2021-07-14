@@ -1,6 +1,6 @@
 module "eks-jx" {
   source          = "github.com/xformation/xformation-terraform-aws-eks"
-  nginx_chart_version = var.nginx_chart_version
+  //nginx_chart_version = var.nginx_chart_version
   cluster_name    = var.cluster_name
   cluster_version = var.cluster_version
   region          = var.region
